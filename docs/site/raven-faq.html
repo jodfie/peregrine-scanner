@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ <script src="https://cdn.shopifycdn.net/s/files/1/0617/5385/2157/t/1/assets/zs_pub_translate_main.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#1b3f5c" />
+
+     
+
+    <meta name="description" content="Have questions about Raven Cloud or Raven Scanner? Our frequently asked questions (FAQs) provide detailed answers to commonly asked questions. If you still don&#39;t see what you need, our friendly and knowledgeable support team is available to assist." />
+    <link rel="canonical" href="https://raven.com/pages/frequently-asked-questions" />
+    <link rel="stylesheet" href="https://use.typekit.net/ndr4uen.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="//raven.com/cdn/shop/t/2/assets/favicon.ico?v=35589849402737055911564069333" />
+
+     
+    <title>Frequently Asked Questions - Get Answers to Your Questions About Raven</title><link href="//raven.com/cdn/shop/t/2/assets/critical-frequently-asked-questions.css?v=80185695841494062091647962550" rel="stylesheet" type="text/css" media="all" />
+
+    <link rel="preload" href="//raven.com/cdn/shop/t/2/assets/app.css?v=19582776342996198941647962551" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="//raven.com/cdn/shop/t/2/assets/app.css?v=19582776342996198941647962551" /></noscript>
+
+    <script src="//raven.com/cdn/shop/t/2/assets/app.js?v=90783607978776283561655389470" defer="true" onload="$(document).foundation()"></script>
+    <script src="https://kit.fontawesome.com/cc65cefd61.js" defer="true"></script>
+
+    <script>
+      /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+      /* This file is meant as a standalone workflow for
+      - testing support for link[rel=preload]
+      - enabling async CSS loading in browsers that do not support rel=preload
+      - applying rel preload css once loaded, whether supported or not.
+      */
+      ;(function (w) {
+        'use strict'
+        // rel=preload support test
+        if (!w.loadCSS) {
+          w.loadCSS = function () {}
+        }
+        // define on the loadCSS obj
+        var rp = (loadCSS.relpreload = {})
+        // rel=preload feature support test
+        // runs once and returns a function for compat purposes
+        rp.support = (function () {
+          var ret
+          try {
+            ret = w.document.createElement('link').relList.supports('preload')
+          } catch (e) {
+            ret = false
+          }
+          return function () {
+            return ret
+          }
+        })()
+
+        // if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+        // then change that media back to its intended value on load
+        rp.bindMediaToggle = function (link) {
+          // remember existing media attr for ultimate state, or default to 'all'
+          var finalMedia = link.media || 'all'
+
+          function enableStylesheet() {
+            // unbind listeners
+            if (link.addEventListener) {
+              link.removeEventListener('load', enableStylesheet)
+            } else if (link.attachEvent) {
+              link.detachEvent('onload', enableStylesheet)
+            }
+            link.setAttribute('onload', null)
+            link.media = finalMedia
+          }
+
+          // bind load handlers to enable media
+          if (link.addEventListener) {
+            link.addEventListener('load', enableStylesheet)
+          } else if (link.attachEvent) {
+            link.attachEvent('onload', enableStylesheet)
+          }
+
+          // Set rel and non-applicable media type to start an async request
+          // note: timeout allows this to happen async to let rendering continue in IE
+          setTimeout(function () {
+            link.rel = 'stylesheet'
+            link.media = 'only x'
+          })
+          // also enable media after 3 seconds,
+          // which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+          setTimeout(enableStylesheet, 3000)
+        }
+
+        // loop through link elements in DOM
+        rp.poly = function () {
+          // double check this to prevent external calls from running
+          if (rp.support()) {
+            return
+          }
+          var links = w.document.getElementsByTagName('link')
+          for (var i = 0; i < links.length; i++) {
+            var link = links[i]
+            // qualify links to those with rel=preload and as=style attrs
+            if (link.rel === 'preload' && link.getAttribute('as') === 'style' && !link.getAttribute('data-loadcss')) {
+              // prevent rerunning on link
+              link.setAttribute('data-loadcss', true)
+              // bind listeners to toggle media back
+              rp.bindMediaToggle(link)
+            }
+          }
+        }
+
+        // if unsupported, run the polyfill
+        if (!rp.support()) {
+          // run once at least
+          rp.poly()
+
+          // rerun poly on an interval until onload
+          var run = w.setInterval(rp.poly, 500)
+          if (w.addEventListener) {
+            w.addEventListener('load', function () {
+              rp.poly()
+              w.clearInterval(run)
+            })
+          } else if (w.attachEvent) {
+            w.attachEvent('onload', function () {
+              rp.poly()
+              w.clearInterval(run)
+            })
+          }
+        }
+
+        // commonjs
+        if (typeof exports !== 'undefined') {
+          exports.loadCSS = loadCSS
+        } else {
+          w.loadCSS = loadCSS
+        }
+      })(typeof global !== 'undefined' ? global : this)
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-KLXSS5D')
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="twitter:site" content="@RavenCloudScan" />
+    <meta name="twitter:title" content="Raven" />
+    <meta name="twitter:creator" content="@RavenCloudScan" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://raven.com/cdn/shop/t/2/assets/og-image.jpg?v=65376391444293450731562770227" />
+    <meta name="twitter:description" content="Manage your work load with Raven!" />
+
+    <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/23692869696/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="ae10cc69d1fa5e388f298277e963e751">
+<meta id="in-context-paypal-metadata" data-shop-id="23692869696" data-venmo-supported="false" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
+<link rel="alternate" hreflang="x-default" href="https://raven.com/pages/frequently-asked-questions">
+<link rel="alternate" hreflang="en" href="https://raven.com/pages/frequently-asked-questions">
+<link rel="alternate" hreflang="en-JP" href="https://raven.com/en-jp/pages/frequently-asked-questions">
+<link rel="alternate" hreflang="en-NL" href="https://raven.com/en-nl/pages/frequently-asked-questions">
+<link rel="alternate" hreflang="en-NZ" href="https://raven.com/en-nz/pages/frequently-asked-questions">
+<script async="async" src="/checkouts/internal/preloads.js?locale=en-US"></script>
+<link rel="preconnect" href="https://shop.app" crossorigin="anonymous">
+<script async="async" src="https://shop.app/checkouts/internal/preloads.js?locale=en-US&shop_id=23692869696" crossorigin="anonymous"></script>
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":23692869696,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/23692869696","merchantName":"Raven","requiredBillingContactFields":["postalAddress","email","phone"],"requiredShippingContactFields":["postalAddress","email","phone"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover","elo","jcb"],"total":{"type":"pending","label":"Raven","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":true}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"ae10cc69d1fa5e388f298277e963e751","betas":["rich-media-storefront-analytics"],"domain":"raven.com","predictiveSearch":true,"shopId":23692869696,"locale":"en"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "raven-scanner.myshopify.com";
+Shopify.locale = "en";
+Shopify.currency = {"active":"USD","rate":"1.0"};
+Shopify.country = "US";
+Shopify.theme = {"name":"Production Theme","id":73086337088,"schema_name":"Skeleton theme","schema_version":"1.0.0","theme_store_id":null,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "raven.com/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>
+  window.ShopifyPay = window.ShopifyPay || {};
+  window.ShopifyPay.apiHost = "shop.app\/pay";
+  window.ShopifyPay.redirectState = null;
+</script>
+<script id="shop-js-analytics" type="application/json">{"pageType":"page"}</script>
+<script defer="defer" async type="module" src="//raven.com/cdn/shopifycloud/shop-js/modules/v2/client.init-shop-cart-sync_IZsNAliE.en.esm.js"></script>
+<script defer="defer" async type="module" src="//raven.com/cdn/shopifycloud/shop-js/modules/v2/chunk.common_0OUaOowp.esm.js"></script>
+<script type="module">
+  await import("//raven.com/cdn/shopifycloud/shop-js/modules/v2/client.init-shop-cart-sync_IZsNAliE.en.esm.js");
+await import("//raven.com/cdn/shopifycloud/shop-js/modules/v2/chunk.common_0OUaOowp.esm.js");
+
+  window.Shopify.SignInWithShop?.initShopCartSync?.({"fedCMEnabled":true,"windoidEnabled":true});
+
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"shop-cart-sync":["modules/v2/client.shop-cart-sync_DLOhI_0X.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"init-fed-cm":["modules/v2/client.init-fed-cm_C6YtU0w6.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"shop-button":["modules/v2/client.shop-button_BCMx7GTG.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"shop-cash-offers":["modules/v2/client.shop-cash-offers_BT26qb5j.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"init-windoid":["modules/v2/client.init-windoid_B9PkRMql.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/client.init-shop-email-lookup-coordinator_DZkqjsbU.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"shop-toast-manager":["modules/v2/client.shop-toast-manager_Di2EnuM7.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"shop-login-button":["modules/v2/client.shop-login-button_BtqW_SIO.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"avatar":["modules/v2/client.avatar_BTnouDA3.en.esm.js"],"pay-button":["modules/v2/client.pay-button_CWa-C9R1.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"init-shop-cart-sync":["modules/v2/client.init-shop-cart-sync_IZsNAliE.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js"],"init-customer-accounts":["modules/v2/client.init-customer-accounts_DenGwJTU.en.esm.js","modules/v2/client.shop-login-button_BtqW_SIO.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/client.init-shop-for-new-customer-accounts_JdHXxpS9.en.esm.js","modules/v2/client.shop-login-button_BtqW_SIO.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"init-customer-accounts-sign-up":["modules/v2/client.init-customer-accounts-sign-up_D6__K_p8.en.esm.js","modules/v2/client.shop-login-button_BtqW_SIO.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"checkout-modal":["modules/v2/client.checkout-modal_C_ZQDY6s.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"shop-follow-button":["modules/v2/client.shop-follow-button_XetIsj8l.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"lead-capture":["modules/v2/client.lead-capture_DvA72MRN.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"shop-login":["modules/v2/client.shop-login_ClXNxyh6.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"],"payment-terms":["modules/v2/client.payment-terms_CNlwjfZz.en.esm.js","modules/v2/chunk.common_0OUaOowp.esm.js","modules/v2/chunk.modal_CGo_dVj3.esm.js"]};
+</script>
+<script>(function() {
+  var isLoaded = false;
+  function asyncLoad() {
+    if (isLoaded) return;
+    isLoaded = true;
+    var urls = ["https:\/\/gtranslate.io\/shopify\/gtranslate.js?shop=raven-scanner.myshopify.com","https:\/\/deliverytimer.herokuapp.com\/deliverrytimer.js?shop=raven-scanner.myshopify.com","https:\/\/front.optimonk.com\/public\/152798\/shopify\/preload.js?shop=raven-scanner.myshopify.com","https:\/\/s3.eu-west-1.amazonaws.com\/production-klarna-il-shopify-osm\/0cf42b376feeb11d247d11c5c05f6df0995db72f\/raven-scanner.myshopify.com-1695221560038.js?shop=raven-scanner.myshopify.com","https:\/\/nudgify.ams3.cdn.digitaloceanspaces.com\/shopify.js?uuid=508f45e5-4005-463c-ad6d-eda42603d6b1\u0026shop=raven-scanner.myshopify.com","https:\/\/gcdn.incartupsell.com\/gcdha-B_ydHUskfjjx4stQXLyq.js?c=1765841010\u0026shop=raven-scanner.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":23692869696,"offset":-21600,"reqid":"7873e7e1-a722-47fc-a6df-9588295a7ed8-1768360183","pageurl":"raven.com\/pages\/frequently-asked-questions","s":"pages-42123231296","u":"f5c737b05efa","p":"page","rtyp":"page","rid":42123231296};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
+<script integrity="sha256-4kQ18oKyAcykRKYeNunJcIwy7WH5gtpwJnB7kiuLZ1E=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//raven.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-a0a9edcb.js" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" defer="defer" src="//raven.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-65b4c6d7.js?v=20250812"></script>
+<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://raven.com/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
+  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
+</script>
+<link id="shopify-accelerated-checkout-styles" rel="stylesheet" media="screen" href="https://raven.com/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css" crossorigin="anonymous">
+<style id="shopify-accelerated-checkout-cart">
+        #shopify-buyer-consent {
+  margin-top: 1em;
+  display: inline-block;
+  width: 100%;
+}
+
+#shopify-buyer-consent.hidden {
+  display: none;
+}
+
+#shopify-subscription-policy-button {
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+#shopify-subscription-policy-button::before {
+  box-shadow: none;
+}
+
+      </style>
+
+<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+  <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0236/9286/9696/files/raven-logo_5135e0df-bebf-4e1f-873d-d44952810d68.png?height=628&pad_color=fff&v=1613764363&width=1200" />
+<meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0236/9286/9696/files/raven-logo_5135e0df-bebf-4e1f-873d-d44952810d68.png?height=628&pad_color=fff&v=1613764363&width=1200" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="628" />
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 23692869696,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script id="web-pixels-manager-setup">(function e(e,d,r,n,o){if(void 0===o&&(o={}),!Boolean(null===(a=null===(i=window.Shopify)||void 0===i?void 0:i.analytics)||void 0===a?void 0:a.replayQueue)){var i,a;window.Shopify=window.Shopify||{};var t=window.Shopify;t.analytics=t.analytics||{};var s=t.analytics;s.replayQueue=[],s.publish=function(e,d,r){return s.replayQueue.push([e,d,r]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l=function(){var e={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/},d=e.modern,r=e.legacy,n=navigator.userAgent;return n.match(d)?"modern":n.match(r)?"legacy":"unknown"}(),u="modern"===l?"modern":"legacy",c=(null!=n?n:{modern:"",legacy:""})[u],f=function(e){return[e.baseUrl,"/wpm","/b",e.hashVersion,"modern"===e.buildTarget?"m":"l",".js"].join("")}({baseUrl:d,hashVersion:r,buildTarget:u}),m=function(e){var d=e.version,r=e.bundleTarget,n=e.surface,o=e.pageUrl,i=e.monorailEndpoint;return{emit:function(e){var a=e.status,t=e.errorMsg,s=(new Date).getTime(),l=JSON.stringify({metadata:{event_sent_at_ms:s},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:d,bundle_target:r,page_url:o,status:a,surface:n,error_msg:t},metadata:{event_created_at_ms:s}}]});if(!i)return console&&console.warn&&console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{return self.navigator.sendBeacon.bind(self.navigator)(i,l)}catch(e){}var u=new XMLHttpRequest;try{return u.open("POST",i,!0),u.setRequestHeader("Content-Type","text/plain"),u.send(l),!0}catch(e){return console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:r,bundleTarget:l,surface:e.surface,pageUrl:self.location.href,monorailEndpoint:e.monorailEndpoint});try{o.browserTarget=l,function(e){var d=e.src,r=e.async,n=void 0===r||r,o=e.onload,i=e.onerror,a=e.sri,t=e.scriptDataAttributes,s=void 0===t?{}:t,l=document.createElement("script"),u=document.querySelector("head"),c=document.querySelector("body");if(l.async=n,l.src=d,a&&(l.integrity=a,l.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{l.dataset[f]=s[f]}catch(e){}if(o&&l.addEventListener("load",o),i&&l.addEventListener("error",i),u)u.appendChild(l);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(l)}}({src:f,async:!0,onload:function(){if(!function(){var e,d;return Boolean(null===(d=null===(e=window.Shopify)||void 0===e?void 0:e.analytics)||void 0===d?void 0:d.initialized)}()){var d=window.webPixelsManager.init(e)||void 0;if(d){var r=window.Shopify.analytics;r.replayQueue.forEach((function(e){var r=e[0],n=e[1],o=e[2];d.publishCustomEvent(r,n,o)})),r.replayQueue=[],r.publish=d.publishCustomEvent,r.visitor=d.visitor,r.initialized=!0}}},onerror:function(){return m.emit({status:"failed",errorMsg:"".concat(f," has failed to load")})},sri:function(e){var d=/^sha384-[A-Za-z0-9+/=]+$/;return"string"==typeof e&&d.test(e)}(c)?c:"",scriptDataAttributes:o}),m.emit({status:"loading"})}catch(e){m.emit({status:"failed",errorMsg:(null==e?void 0:e.message)||"Unknown error"})}}})({shopId: 23692869696,storefrontBaseUrl: "https://raven.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["2dca8a86","a0d5f9d2"],webPixelsConfigList: [{"id":"471466294","configuration":"{\"pixel_id\":\"342858950169917\",\"pixel_type\":\"facebook_pixel\",\"metaapp_system_user_token\":\"-\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"ca16bc87fe92b6042fbaa3acc2fbdaa6","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"]}},{"id":"227082550","configuration":"{\"tagID\":\"2613525340388\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"18031546ee651571ed29edbe71a3550b","type":"APP","apiClientId":3009811,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"]}},{"id":"135201078","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["MARKETING"],"name":"Meta pixel (migrated)"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Raven","paymentSettings":{"currencyCode":"USD"},"myshopifyDomain":"raven-scanner.myshopify.com","countryCode":"US","storefrontUrl":"https:\/\/raven.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},"https://raven.com/cdn","7cecd0b6w90c54c6cpe92089d5m57a67346",{"modern":"","legacy":""},{"shopId":"23692869696","storefrontBaseUrl":"https:\/\/raven.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"2dca8a86\", \"a0d5f9d2\"]","isMerchantRequest":"false","hashVersion":"7cecd0b6w90c54c6cpe92089d5m57a67346","publish":"custom","events":"[[\"page_viewed\",{}]]"});</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'USD';
+  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":42123231296,"requestId":"7873e7e1-a722-47fc-a6df-9588295a7ed8-1768360183"}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+<script class="analytics">
+  (function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.onerror = function(e) {
+        var scriptFallback = document.createElement('script');
+        scriptFallback.type = 'text/javascript';
+        scriptFallback.onerror = function(error) {
+                var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 23692869696,
+      theme_id: 73086337088,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//raven.com/cdn/s/trekkie.storefront.55c6279c31a6628627b2ba1c5ff367020da294e2.min.js"});
+
+        };
+        scriptFallback.async = true;
+        scriptFallback.src = '//raven.com/cdn/s/trekkie.storefront.55c6279c31a6628627b2ba1c5ff367020da294e2.min.js';
+        first.parentNode.insertBefore(scriptFallback, first);
+      };
+      script.async = true;
+      script.src = '//raven.com/cdn/s/trekkie.storefront.55c6279c31a6628627b2ba1c5ff367020da294e2.min.js';
+      first.parentNode.insertBefore(script, first);
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":23692869696,"isMerchantRequest":null,"themeId":73086337088,"themeCityHash":"12802309872146958755","contentLanguage":"en","currency":"USD","eventMetadataId":"d58d3ab6-0294-4415-8a1d-9038baf54650"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["65f19447"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":42123231296,"requestId":"7873e7e1-a722-47fc-a6df-9588295a7ed8-1768360183","shopifyEmitted":true});
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+
+        var eventsListenerScript = document.createElement('script');
+        eventsListenerScript.async = true;
+        eventsListenerScript.src = "//raven.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js";
+        document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+
+})();</script>
+  <script>
+  if (!window.ga || (window.ga && typeof window.ga !== 'function')) {
+    window.ga = function ga() {
+      (window.ga.q = window.ga.q || []).push(arguments);
+      if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+        window.Shopify.analytics.publish("ga_stub_called", {}, {sendTo: "google_osp_migration"});
+      }
+      console.error("Shopify's Google Analytics stub called with:", Array.from(arguments), "\nSee https://help.shopify.com/manual/promoting-marketing/pixels/pixel-migration#google for more information.");
+    };
+    if (window.Shopify && window.Shopify.analytics && typeof window.Shopify.analytics.publish === 'function') {
+      window.Shopify.analytics.publish("ga_stub_initialized", {}, {sendTo: "google_osp_migration"});
+    }
+  }
+</script>
+<script
+  defer
+  src="https://raven.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.0.3.min.js"
+  data-application="storefront-renderer"
+  data-shop-id="23692869696"
+  data-render-region="gcp-us-east1"
+  data-page-type="page"
+  data-theme-instance-id="73086337088"
+  data-theme-name="Skeleton theme"
+  data-theme-version="1.0.0"
+  data-monorail-region="shop_domain"
+  data-resource-timing-sampling-rate="10"
+  data-shs="true"
+  data-shs-beacon="true"
+  data-shs-export-with-fetch="true"
+  data-shs-logs-sample-rate="1"
+  data-shs-beacon-endpoint="https://raven.com/api/collect"
+></script>
+</head>
+
+  <body>
+<script>window.KlarnaThemeGlobals={};</script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KLXSS5D"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas position-right" id="offCanvasMenu" data-off-canvas data-content-scroll="false">
+        <div class="mobile-menu">
+  <div class="grid-x margin-bottom-1">
+          <a href="/cart">
+            <img src="//raven.com/cdn/shop/t/2/assets/cart.svg?v=169669813562276369861562707343" alt="Cart" />
+            <span class="primary badge header__item-count" style="display: none">0</span>
+          </a>
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <ul id="navigation" class="vertical menu">
+    
+    <li>
+      <a href="/">Home</a>
+      
+    </li>
+    
+    <li>
+      <a href="https://starfish.zendesk.com/hc/en-us">Help Center</a>
+      
+    </li>
+    
+    <li>
+      <a href="/pages/contact-us">Contact Us</a>
+      
+    </li>
+    
+  </ul>
+
+  <hr />
+  <a href="https://app.raven.com/auth/login" class="small expanded button">Log In</a>
+</div>
+
+      </div>
+      <div class="off-canvas-content" data-off-canvas-content>
+        <div class="grid-y" style="min-height: 100vh">
+          <div id="outer-container">
+            <div id="page-wrap">
+              <header  id="header" class="header
+" >
+  <div class="grid-x align-justify header__container">
+    <div class="large-shrink medium-2 small-7 cell">
+      <a href="/">
+        <img class="logo" src="//raven.com/cdn/shop/t/2/assets/raven-logo_x60.png?v=116882175045244047641561145588" alt="Raven Logo" />
+      </a>
+    </div>
+    <div class="shrink cell show-for-small-only">
+      <a href="#" data-toggle="offCanvasMenu"><i class="fa fa-free fa-bars"></i></a>
+    </div>
+    <div class="large-shrink medium-8 cell show-for-medium">
+      <ul id="navigation" class="header__menu menu align-center">
+        
+        <li>
+          <a href="/">Home</a>
+        </li>
+        
+        <li>
+          <a href="/pages/contact-us">Contact Us</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="large-shrink medium-2 cell show-for-medium">
+      <ul class="menu">
+        
+        <li class="padding-left-1">
+          <a href="https://app.raven.com/auth/login"
+            class="button button--responsive">Log In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+              <div style="flex: 1 0 auto">
+                <section class="section">
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x align-center">
+      <div class="small-12 cell text-center">
+        <h1>Frequently Asked Questions</h1>
+        <p class="lead margin-top-1">
+          If you have more questions, <a href="/pages/contact-us"><strong>Contact Us</strong></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="grid-container">
+    <ul class="tabs tab-card" data-tabs id="faq-tabs">
+      <div class="grid-x grid-padding-x align-center small-up-2 medium-up-4">
+        <li class="cell tabs-title is-active">
+          <a href="#panel1" aria-selected="true">
+            <div class="card text-center">
+  <div class="card-section">
+    <img src="//raven.com/cdn/shop/t/2/assets/raven-cloud.svg?v=96520074517543690731562768776" alt="RAVEN CLOUD™" style="height: 30px;" />
+    <div class="grid-y align-middle align-center" style="height: 70px;">
+      <div class="shrink cell">
+        <h4 class="padding-top-1">RAVEN CLOUD™</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </a>
+        </li>
+        <li class="cell tabs-title">
+          <a href="#panel2">
+            <div class="card text-center">
+  <div class="card-section">
+    <img src="//raven.com/cdn/shop/t/2/assets/faq-scanner.svg?v=19082095955421083151562768749" alt="RAVEN SCANNER™" style="height: 30px;" />
+    <div class="grid-y align-middle align-center" style="height: 70px;">
+      <div class="shrink cell">
+        <h4 class="padding-top-1">RAVEN SCANNER™</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </a>
+        </li>
+        <li class="cell tabs-title">
+          <a href="#panel3">
+            <div class="card text-center">
+  <div class="card-section">
+    <img src="//raven.com/cdn/shop/t/2/assets/account.svg?v=175004600452816763171561145645" alt="ACCOUNT" style="height: 30px;" />
+    <div class="grid-y align-middle align-center" style="height: 70px;">
+      <div class="shrink cell">
+        <h4 class="padding-top-1">ACCOUNT</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </a>
+        </li>
+        <li class="cell tabs-title">
+          <a href="#panel4">
+            <div class="card text-center">
+  <div class="card-section">
+    <img src="//raven.com/cdn/shop/t/2/assets/orders.svg?v=140729927827206199881561145623" alt="ORDERS" style="height: 30px;" />
+    <div class="grid-y align-middle align-center" style="height: 70px;">
+      <div class="shrink cell">
+        <h4 class="padding-top-1">ORDERS</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </a>
+        </li>
+      </div>
+    </ul>
+
+    <div class="tabs-content" data-tabs-content="faq-tabs">
+      <div class="tabs-panel is-active" id="panel1">
+        <div class="cell">
+  <h2 class="text-center">RAVEN CLOUD™</h2>
+</div>
+<ul class="accordion raven-accordion" data-accordion="" data-allow-all-closed="true"><li class="accordion-item is-active" data-accordion-item=""><a class="accordion-title" href="#">How do I sign up for a Raven Cloud&trade; account?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>It only takes a few seconds to fill out the Sign Up form and begin using Raven Cloud <a title="A link to Raven Sign up" href="https://app.raven.com/auth/signup">here</a>. You will receive a confirmation link via email. That's it - you're on your way to going paperless!</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">How many users can have access to a Raven Cloud&trade; account?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>You can add as many users as needed to your Raven Cloud account. Make sure to set the proper permissions when adding users if you want to restrict user access and capabilities.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Do I need a Raven Scanner&trade; in order to use Raven Cloud&trade;?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>No. Raven Cloud is a universal document management system that will support uploading of your documents directly into Raven Cloud, making them instantly searchable. The Raven Scanner is integrated with Raven Cloud to allow for seamless scanning into your Raven Cloud account.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">How much storage space do I get with Raven Cloud?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>Raven Cloud provides unlimited storage - no strings attached.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Are all documents searchable via OCR?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>YES! Every document added to Raven Cloud becomes fully searchable (typed and handwritten text) via AI-powered optical character recognition (OCR).</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Can I edit my documents after they are in Raven Cloud?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>YES! Raven Cloud provides advanced editing features such as removing pages, rotating pages, cropping pages, combining documents, annotating, and more. All editing features are included in your Raven Cloud plan.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Are role-based security permissions available?</a><div class="accordion-content" data-tab-content=""><div class=""><p>Raven Cloud allows you to set up role-based permissions for your users, adding extra security to your account. The following user roles are available.</p><ul><li><strong>Owners</strong> have complete control of the system. They can perform all of the functions of all other roles. However, the main tasks of the System Administrators are to add users to the system, assign users to their appropriate access levels, manage user accounts and manage global account settings as well as billing.</li><li><strong>Editors</strong> have complete access to add new folders, add new documents and edit existing documents and templates in all folders within the account, except those that have been restricted, as well as the ability to archive and delete documents, folders and templates.</li><li><strong>Contributors</strong> have complete access to add new folders, add new documents and edit existing documents and templates in all folders within the account, except those that have been restricted. Contributors do not have the ability to delete or archive any files or templates.</li><li><strong>Read</strong> users are able to view and download all documents and folders within the account, except those that have been restricted. Read users do not have the ability to add new documents, edit, archive or delete existing documents.</li><li><strong>View</strong> users are able to view all documents and folders within the account, except those that have been restricted, but do not have the ability to download any documents. View only users also do not have the ability to add new documents, edit, archive or delete existing documents.</li></ul></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Do I have to sign up for a Raven Cloud&trade; account to use the Raven Scanner&trade;?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>Yes, you do have to sign up for a free Raven Cloud&trade; account in order to use the Raven Scanner&trade;. Signing up for a Raven Cloud&trade; account enables you to have full access to all of our features, such as scanning to 3rd party destinations like Google Drive, Dropbox, Evernote, SharePoint, OneDrive and box.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">What file types are able to be uploaded and stored in Raven Cloud?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>Raven Cloud currently supports PDF, JPEG and TIFF document types.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">How do I use the templates feature?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>Templates are designed to help structure data for your common document types. For example, a template for invoices could include data fields for the client, address, phone, amount. A template for business cards could include company, contact name, phone, email, fax, address, etc.</p><p>Once a template is created, you can assign documents to template types to take advantage of structured data capture, making it easier to export and search for documents.</p></div></div></li></ul>
+
+      </div>
+      <div class="tabs-panel" id="panel2">
+        <div class="cell">
+  <h2 class="text-center">RAVEN SCANNER™</h2>
+</div>
+<ul class="accordion raven-accordion" data-accordion="" data-allow-all-closed="true"><li class="accordion-item is-active" data-accordion-item=""><a class="accordion-title" href="#">Does Raven Scanner&trade; require another account to login?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>No, simply log in with your Raven account credentials on the scanner. If you choose to scan to other services such as Google Drive, Dropbox or Evernote, you will sign into those applications separately during setup.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Do you have to be connected to internet to use Raven Scanner&trade;?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>Yes, Raven&trade; scanners require an internet connection via a WiFi network or via ethernet connection in order to Sign up or Sign In to your Raven account. No USB connection is required to scan to your favorite cloud destinations such as Raven Cloud&trade;, Google Drive, Dropbox, SharePoint, OneDrive, box and Evernote. If you require a direct connection and want to scan through your Windows PC or Mac, the Raven Scanner&trade; Pro has a USB port - simply download the drivers below.</p><ul><li><a href="https://drive.google.com/file/d/1eIg212JNc_e9sheSsuVYj_Nnuqdk4V3b/view?usp=sharing"> <strong>Raven Scanner Pro Mac Driver</strong> </a></li><li><a href="https://drive.google.com/file/d/1nVhz9KNmxhd3ihj6tVSXf59o83D18xlI/view?usp=sharing"> <strong>Raven Scanner Pro Windows Driver</strong> </a></li></ul></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Do I have to pay for Raven Cloud&trade; in order to use the scanner?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>No, Raven Cloud&trade; is a free service included with any of our scanners, however you will be required to sign up for a free Raven&trade; account.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Does the Raven Scanner&trade; correct skewed scan pages?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>Yes! The Raven Scanner automatically detects and corrects skewed pages during scanning.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Does the Raven Scanner&trade; automatically detect blank pages?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>Yes! The Raven Scanner automatically detects blank pages when scanning. Within the scanner settings you can choose whether to keep the blank pages in your document, or to automatically remove them.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Do Raven&trade; Scanners work with Windows PC/Mac?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>Raven&trade; Scanners have the ability to scan directly to your favorite cloud destinations including Raven Cloud&trade;, Google Drive, Dropbox, SharePoint, OneDrive, Evernote, box, email or fax using a Wifi or Ethernet internet connection. Raven&trade; Scanners do not require a USB connection to a Windows PC/Mac in order to scan to these destinations.</p><p>If you require a direct connection and scanning through your Windows PC/Mac, the Raven Scanner&trade; Pro has TWAIN drivers which are available for download for Mac and PC, and the Raven Original and Plus have Network TWAIN drivers for Windows PC. Simply download the drivers below and use with your preferred TWAIN scanner application.</p><ul><li><a href="https://starfish.zendesk.com/hc/en-us/articles/360033057632-Scanning-To-Your-Mac-From-Raven-Scanner-Pro"> <strong>Raven Scanner Pro Mac Driver</strong> </a></li><li><a href="https://starfish.zendesk.com/hc/en-us/articles/360031724051-Scanning-To-Your-Windows-PC-From-Raven-Scanner-Pro"> <strong>Raven Scanner Pro Windows PC Driver</strong> </a></li><li><strong><a href="https://starfish.zendesk.com/hc/en-us/articles/360035153312">Raven Scanner Original Windows PC Driver</a></strong></li></ul></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Does the Raven Scanner&trade; have a TWAIN driver?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>Yes, the Raven Scanner&trade; Pro has TWAIN drivers which are available for download for Mac and PC. The Raven Original and Plus has Network TWAIN drivers for Windows PC.&nbsp; When using the TWAIN driver installation and a scanner application, the Raven Scanner&trade; will work with third party applications scanning such as Adobe Acrobat. TWAIN driver installation is not necessary for scanning to email, fax or cloud services such as Raven Cloud&trade;, Google Drive, Dropbox, SharePoint, OneDrive, box or Evernote.</p><ul><li><a href="https://starfish.zendesk.com/hc/en-us/articles/360033057632-Scanning-To-Your-Mac-From-Raven-Scanner-Pro"> <strong>Raven Scanner Pro Mac Driver</strong> </a></li><li><a href="https://starfish.zendesk.com/hc/en-us/articles/360031724051-Scanning-To-Your-Windows-PC-From-Raven-Scanner-Pro"> <strong>Raven Scanner Pro Windows PC Driver</strong> </a></li><li><strong><a href="https://starfish.zendesk.com/hc/en-us/articles/360035153312">Raven Scanner Original Windows PC Driver</a></strong></li></ul></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">What is the hardware warranty for the Raven Scanner&trade;?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>All Raven Scanners&trade; are designed with the latest scanner technology and innovative software to provide the highest performance and reliability. All Raven Scanners&trade; include a One Year Limited Warranty for defects in materials and workmanship. You can view full warranty details <a href="https://cdn.shopify.com/s/files/1/0236/9286/9696/files/Raven_Scanner_Limited_Warranty_Guide_1__1.pdf"> here </a></p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">What applications are supported by the Raven Scanner&trade;?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>The Raven Scanner supports Raven Cloud&trade;, Google Drive, Dropbox, SharePoint, OneDrive, box, and Evernote. You can also email and fax using the scanner.</p></div></div></li></ul>
+
+      </div>
+      <div class="tabs-panel" id="panel3">
+        <div class="cell">
+  <h2 class="text-center">ACCOUNT</h2>
+</div>
+<ul class="accordion raven-accordion" data-accordion="" data-allow-all-closed="true"><li class="accordion-item is-active" data-accordion-item=""><a class="accordion-title" href="#">Can you assign admin rights to a user?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>Yes, only an admin can assign admin rights to a user.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Can a user delete their own account?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>No, an admin must delete a user.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">How do I update my email address?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>You can update your email address by going to the Profile tab under your account. Updating your email address will also update your username.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">How do I find my forgotten password?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>You must reset your password. In order to reset your password click "Log In" followed by "Forgot My Password". Please follow the instructions on the screen.</p></div></div></li></ul>
+
+      </div>
+      <div class="tabs-panel" id="panel4">
+        <div class="cell">
+  <h2 class="text-center">ORDERS</h2>
+</div>
+<ul class="accordion raven-accordion" data-accordion="" data-allow-all-closed="true"><li class="accordion-item is-active" data-accordion-item=""><a class="accordion-title" href="#">What is the status of my order?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>If you ordered through Amazon, check the status of your order in your Amazon account, or by calling us at <a title="1-800-713-9009" href="tel:1-800-713-9009">1-800-713-9009</a>.</p><p>If you ordered direct from Raven, you can check the status of your order by clicking on the "View Your Order" link in your order confirmation email, or by calling us at <a title="1-800-713-9009" href="tel:1-800-713-9009">1-800-713-9009</a>.</p></div></div></li><li class="accordion-item" data-accordion-item=""><a class="accordion-title" href="#">Can I return my Raven Scanner&trade;?</a><div class="accordion-content" data-tab-content=""><div class="cell"><p>Yes, you can return your Raven Scanner&trade; within 30 days of purchase in the original box along with your original purchase receipt.</p></div></div></li></ul>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+              </div>
+               <footer class="footer grid-container">
+  <div class="grid-x grid-padding-x align-justify">
+    <div class="medium-shrink cell">
+      <a href="/">
+        
+
+
+
+
+<div class="lazy-asset "  style="min-width: 250px; min-height: 70px;"  >
+  <img
+    alt="Raven Logo"
+    data-sizes="auto"
+    class="logo"
+    loading="lazy"
+    src="//raven.com/cdn/shop/t/2/assets/raven-logo_400x.png?v=116882175045244047641561145588"
+    data-lowsrc="//raven.com/cdn/shop/t/2/assets/raven-logo_10x.png?v=116882175045244047641561145588"
+    
+  />
+</div>
+
+
+      </a>
+    </div>
+                <div class="medium-4 cell">
+          <h3 class="footer__heading">Support</h3>
+          <ul class="footer__menu menu">
+            
+            <li>
+              <a href="https://support.raven.com/hc/en-us">Help Center</a>
+            </li>
+            
+            <li>
+              <a href="/pages/downloads">Downloads</a>
+            </li>
+            
+            <li>
+              <a href="https://www.raven.com/contact-us">Contact Us</a>
+            </li>
+            
+            <li>
+              <a href="mailto:support@raven.com">support@raven.com</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+  <hr />
+  <div class="grid-x align-justify align-middle">
+    <div class="medium-shrink cell footer__text">
+      © Copyright Raven.com. All Rights Reserved
+    </div>
+    <div class="medium-shrink cell">
+      <ul class="menu align-center">
+        
+        <li>
+          <a href="/pages/privacy-policy">Privacy Policy</a>
+        </li>
+        
+        <li>
+          <a href="/pages/terms-and-conditions">Terms &amp; Conditions</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+ 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script>
+    if(!window.PomFirstLoad){
+        if(typeof(Spurit) === 'undefined'){
+            var Spurit = {};
+        }
+        if(!Spurit.Preorder2){
+            Spurit.Preorder2 = {};
+        }
+        if(!Spurit.Preorder2.snippet){
+        Spurit.Preorder2.snippet = {};
+        }
+        if(!Spurit.Preorder2.snippet.products){
+        Spurit.Preorder2.snippet.products = {};
+        }
+        Spurit.Preorder2.snippet.shopHash = '92f8320812deb6eeefedc9a33e74c8a4';
+        Spurit.Preorder2.snippet.cacheTimestamp = 1698293703;
+
+        if(typeof(Spurit.globalSnippet) === 'undefined'){
+            Spurit.globalSnippet = {
+                shop_currency: 'USD',
+                money_format: '<span class=money>${{amount}}</span>',
+                cart: {"note":null,"attributes":{},"original_total_price":0,"total_price":0,"total_discount":0,"total_weight":0.0,"item_count":0,"items":[],"requires_shipping":false,"currency":"USD","items_subtotal_price":0,"cart_level_discount_applications":[],"checkout_charge_amount":0},
+                customer_id: ''
+            };
+        }
+
+        
+
+        
+
+        
+    }
+</script>
+
+<script>
+  (function() {
+    setTimeout(() => document.querySelector('body').classList.add('spo-loaded'), 5000)
+  })();
+</script>
+
+    <script>
+        if(!window.PomFirstLoad){
+            window.PomFirstLoad = true;
+            let script = document.createElement("script");  // create a script DOM node
+            script.src = "https://amaicdn.com/preorder2/common.js";  // set its src to the provided URL
+            document.head.appendChild(script);
+        }
+    </script>
+
+
+
+</body>
+</html>

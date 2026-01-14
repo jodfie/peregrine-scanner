@@ -1,0 +1,86 @@
+[Version]
+Signature="$CHICAGO$"
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider=%Company%
+CatalogFile=AN360W.cat
+DriverVer=10/31/2018,6.2.0.0
+
+[ControlFlags]
+; Remove comment from this line if all devices are PnP.
+ExcludeFromSelect=*
+
+[Manufacturer]
+%Company%=Models,ntamd64,ntia64
+
+[Models]
+%Product% = Scanner.USB,USB\VID_0638&PID_2DC2
+
+[Models.ntamd64]
+%Product% = Scanner.USB,USB\VID_0638&PID_2DC2
+
+[Models.ntia64]
+%Product% = Scanner.USB,USB\VID_0638&PID_2DC2
+
+[Scanner.USB]
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x01
+Events=Scanner.USB.Events
+AddReg=Scanner.USB.AddReg
+DeviceData=Scanner.USB.DeviceData
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[Scanner.USB.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x01
+Events=Scanner.USB.Events
+DeviceData=Scanner.USB.DeviceData
+AddReg=Scanner.USB.AddReg
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[Scanner.USB.DeviceData]
+TwainDS=%Product%
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+ISISDriverName=AN360W.pxn
+
+[Scanner.USB.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[Scanner.USB.Events]
+Button1Changed="Function 1",{2F596C80-76EC-11da-AAFD-0050BA1ACA6F},Scanner Button Manager
+Button2Changed="Function 2",{2F596C81-76EC-11da-AAFD-0050BA1ACA6F},Scanner Button Manager
+Button3Changed="Function 3",{2F596C82-76EC-11da-AAFD-0050BA1ACA6F},Scanner Button Manager
+Button4Changed="Function 4",{2F596C83-76EC-11da-AAFD-0050BA1ACA6F},Scanner Button Manager
+Button5Changed="Function 5",{2F596C84-76EC-11da-AAFD-0050BA1ACA6F},Scanner Button Manager
+Button6Changed="Function 6",{2F596C85-76EC-11da-AAFD-0050BA1ACA6F},Scanner Button Manager
+Button7Changed="Function 7",{2F596C86-76EC-11da-AAFD-0050BA1ACA6F},Scanner Button Manager
+Button8Changed="Function 8",{2F596C87-76EC-11da-AAFD-0050BA1ACA6F},Scanner Button Manager
+Button9Changed="Function 9",{2F596C88-76EC-11da-AAFD-0050BA1ACA6F},Scanner Button Manager
+Button10Changed="Connected",{D87C0866-DD6D-11d7-AAFB-0050BA1ACA6F},Scanner Button Manager
+
+[Scanner.USB.AddReg]
+HKR,,HardwareConfig,1,4
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,"usbscan.sys"
+HKR,,DRIVERPATH,,%10%\TWAIN_32\%Company%\%Product%\AN360W.dll
+HKR,,USDClass,,"{D68317E9-881C-4B15-8D50-33D76FFCB277}"
+HKCR,CLSID\{D68317E9-881C-4B15-8D50-33D76FFCB277},,,"Avision Scanner"
+HKCR,CLSID\{D68317E9-881C-4B15-8D50-33D76FFCB277}\InProcServer32,,,%11%\AN360W.cpl
+HKCR,CLSID\{D68317E9-881C-4B15-8D50-33D76FFCB277}\InProcServer32,ThreadingModel,,"Both"
+HKLM,%reg_TWAIN_path%,"SAVEPATH",0x00000000,%16419%\%Product%"\"
+HKLM,%reg_TWAIN_path%,"TWAINPATH",0x00000000,%10%\TWAIN_32\%Company%\%Product%"\"
+HKLM,%reg_TWAIN_path%,"DSLOC",0x00000000,%10%\TWAIN_32\%Company%\%Product%"\scanner.ini"
+HKLM,%reg_TWAIN_path%,"DEBUGLEVEL",0x00010001,0
+
+[Strings]
+Company="Avision"
+Product="AN360W"
+reg_TWAIN_path="Software\AjaxData\TWAIN"

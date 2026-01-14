@@ -23,3 +23,7 @@ logs
 !.serena
 !.claude
 !.taskmaster
+
+# Large local-only binaries (not tracked in git)
+downloads/drivers/original-1st-gen/Raven_Original1_Windows_TWAIN.zip
+downloads/software/Raven-Desktop-Setup.exe

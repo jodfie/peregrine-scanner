@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="2I9NtQR5lqLK4P2wdM8hOUyX8n1eEONrroSw3N5f">
+
+        <title>GetSearchablePDF</title>
+
+        <link rel="icon" href="https://getsearchablepdf.com/projects/getsearchablepdf/favicon.ico">
+
+        <!-- Fonts -->
+        <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
+        <!-- Scripts -->
+        <link rel="preload" as="style" href="https://getsearchablepdf.com/build/assets/app.7ef7c849.css" /><link rel="modulepreload" href="https://getsearchablepdf.com/build/assets/app.cffed56f.js" /><link rel="stylesheet" href="https://getsearchablepdf.com/build/assets/app.7ef7c849.css" /><script type="module" src="https://getsearchablepdf.com/build/assets/app.cffed56f.js"></script>
+        <style>
+            [x-cloak]{
+                display: none;
+            }
+        </style>
+
+                    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K7XPQEMNZ3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-K7XPQEMNZ3');
+</script>
+        
+        
+            </head>
+    <body class="flex flex-col h-full bg-background">
+        <div x-data="{&quot;show&quot;:true,&quot;style&quot;:&quot;success&quot;,&quot;message&quot;:null}"
+            :class="{ 'bg-indigo-500': style == 'success', 'bg-red-700': style == 'danger', 'bg-gray-500': style != 'success' && style != 'danger' }"
+            style="display: none;"
+            x-show="show && message"
+            x-init="
+                document.addEventListener('banner-message', event => {
+                    style = event.detail.style;
+                    message = event.detail.message;
+                    show = true;
+                });
+            ">
+    <div class="max-w-screen-xl px-3 py-2 mx-auto sm:px-6 lg:px-8">
+        <div class="flex flex-wrap items-center justify-between">
+            <div class="flex items-center flex-1 w-0 min-w-0">
+                <span class="flex p-2 rounded-lg" :class="{ 'bg-indigo-600': style == 'success', 'bg-red-600': style == 'danger' }">
+                    <svg x-show="style == 'success'" class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <svg x-show="style == 'danger'" class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                    </svg>
+                    <svg x-show="style != 'success' && style != 'danger'" class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                    </svg>
+                </span>
+
+                <p class="ml-3 text-sm font-medium text-white truncate" x-text="message"></p>
+            </div>
+
+            <div class="shrink-0 sm:ml-3">
+                <button
+                    type="button"
+                    class="flex p-2 -mr-1 transition rounded-md focus:outline-none sm:-mr-2"
+                    :class="{ 'hover:bg-indigo-600 focus:bg-indigo-600': style == 'success', 'hover:bg-red-600 focus:bg-red-600': style == 'danger' }"
+                    aria-label="Dismiss"
+                    x-on:click="show = false">
+                    <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <header class="text-gray-600 bg-background shrink-0">
+    <div class="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
+        <a href="https://getsearchablepdf.com" class="inline-block mb-4 md:mb-0">
+            <img src="https://getsearchablepdf.com/projects/getsearchablepdf/logo.png" alt="GetSearchablePDF" style="height: 24px; width: auto;" />
+        </a>
+
+        <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto md:mr-auto">
+            <a href="https://getsearchablepdf.com#pricing" class="mr-5 text-gray-900">Pricing</a>
+<a href="https://getsearchablepdf.com#faq" class="mr-5 text-gray-900">FAQ</a>
+<a href="https://getsearchablepdf.com/about" class="mr-5 text-gray-900">About</a>
+        </nav>
+
+                    <a href="https://getsearchablepdf.com/login" class="inline-flex items-center px-3 py-1 mt-4 text-base text-gray-900 bg-gray-100 border-0 rounded focus:outline-none hover:bg-gray-300 focus:bg-gray-300 md:mt-0">
+                Login
+            </a>
+            </div>
+</header>
+
+        <div class="font-sans antialiased text-gray-900 grow dark:text-gray-100">
+            <section class="text-gray-600">
+		<div class="container flex flex-col items-center justify-center px-5 py-12 mx-auto">
+			<div class="w-full"  style="width: 60%;">
+				<h1 class="mb-4 text-3xl font-medium text-gray-900 sm:text-4xl text-center">Guide for Raven scanners</h1>
+				<p class="mb-8 leading-relaxed text-gray-900 text-center">
+					(You only have to do the following steps once)
+				</p>
+				<p class="mb-8 leading-relaxed text-gray-900 text-left">
+				
+					Raven Cloud will stop working on 31 December 2023. You can continue using your scanner with GetSearchablePDF!<br>
+					Just set the connection to Dropbox or OneDrive instead of Raven Cloud and all your scans will be processed with OCR.<br><br>
+										
+					Steps:<br>
+					<b>1.</b> Sign up for GetSearchablePDF<br>
+					<b>2.</b> Connect your Dropbox or OneDrive account in GetSearchablePDF<br>
+					<b>3.</b> After connecting the account a folder "GetSearchablePDF" will be created under Dropbox\Apps (or OneDrive\Apps).<br>
+					<b>4.</b> If you have already connected your Dropbox or OneDrive account in Raven Cloud skip this step. If not:<br>
+						&nbsp;&nbsp;&nbsp;&nbsp; a. Log in to your Raven Cloud account.<br>
+						&nbsp;&nbsp;&nbsp;&nbsp; b. Access MY ACCOUNT by clicking on your profile image/name.<br>
+						&nbsp;&nbsp;&nbsp;&nbsp; c. Click the CONNECTIONS tab from the navigation menu.<br>
+						&nbsp;&nbsp;&nbsp;&nbsp; d. Locate Dropbox or OneDrive and press SET UP.<br>
+						&nbsp;&nbsp;&nbsp;&nbsp; e. Choose Full Access as preferred access level. This is just to ensure that Raven Cloud can write to the GetSearchablePDF folder. GetSearchablePDF itself can only access files within the GetSearchablePDF folder.<br>
+						&nbsp;&nbsp;&nbsp;&nbsp; f. Log in using your Dropbox email and password.<br>
+						&nbsp;&nbsp;&nbsp;&nbsp; g. You will now be directed to CLICK HERE to choose a destination folder.<br>
+						&nbsp;&nbsp;&nbsp;&nbsp; h. Choose Apps -> GetSearchablePDF -> Input and press SELECT.<br>
+						&nbsp;&nbsp;&nbsp;&nbsp; i. To complete set up, click CONTINUE to confirm the folder of your choice.<br>
+
+					<b>5.</b> Make sure the destination in your Raven scanner is set to Dropbox or OneDrive and the destination folder is Apps -> GetSearchablePDF -> Input.<br>
+					<b>6.</b> You are now ready to scan! Every page you scan will be now sent to the Apps/GetSearchablePDF/Input folder, will get processed with OCR and you will get a searchable PDF in Apps/GetSearchablePDF/Output.<br>
+					<b>7.</b> You get a free trial of 10 pages. You can purchase a subscription for more pages <a href="/billing" class="text-blue-600 hover:text-blue-800 underline">here</a>.<br>
+					</p>
+
+
+					<br><br>
+					<h1 class="mb-4 text-3xl font-medium text-gray-900 sm:text-lg text-center">If Raven Cloud login stops working</h1>
+					<p class="mb-8 leading-relaxed text-gray-900 text-left">			
+					<br>
+					In case Raven Cloud goes down and does not let you set up the connection to Dropbox/OneDrive, don't worry, your Raven scanner is not a brick!<br><br>
+					You can use the TWAIN drivers and a third party app to scan. We recommend NAPS2, which is free and opensource. This is also what Raven recommended in their support site.<br> 
+					You can set NAPS2 to save the scanned files to the GetSearchablePDF Input folder so that they will get automatically processed with OCR.<br><br>
+					
+					
+					Steps:<br>
+					<b>A.</b> Download the TWAIN drivers for your scanner. Unfortunately Raven's support site is not accessible anymore but you can use archive.org to retrieve the TWAIN drivers.<br>
+					For convenience we have assembled the drivers for all the models <a href="#drivers" class="text-blue-600 hover:text-blue-800 underline">here</a><br>
+					
+					<b>B.</b> Install the TWAIN drivers (make sure you select the TWAIN driver during the installation).<br>
+		
+					<b>C.</b> Download and install <a href="https://www.naps2.com/" class="text-blue-600 hover:text-blue-800 underline">NAPS2</a>.<br>
+					
+					<b>D.</b> Click on Profiles -> New:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp; - Select TWAIN Driver, click on "Choose device", click the Raven Scanner listed and press "Select".<br>
+					&nbsp;&nbsp;&nbsp;&nbsp; - Set Paper Source to "Duplex".<br>
+					&nbsp;&nbsp;&nbsp;&nbsp; - Set the resolution to 200 dpi (this is what Raven recommends for most scans). 
+					Select OK.<br>
+					<b>E.</b> Click on "Enable Auto Save" checkbox. Click on "..." button to set the path to "Dropbox\Apps\GetSearchablePDF\Input" (for Dropbox) or "OneDrive\Apps\GetSearchablePDF\Input" (for OneDrive).<br>
+					<b>F.</b> You are ready to press Scan. Each scanned page will be saved to the Input folder, will get processed with OCR and appear in the Output folder.<br>
+					</p>
+					<br><br>
+					
+					<h1 class="mb-4 text-3xl font-medium text-gray-900 sm:text-lg text-center">Can I convert my backlog of existing scans to searchable PDFs?</h1>
+					<br>
+					<p class="mb-8 leading-relaxed text-gray-900 text-left">
+						Users have reported that Raven Cloud OCR stopped working around the end of September 2023. 
+						If you want to convert your existing scans to searchable PDFs, you can download your files from Raven Cloud and then copy-paste them in the GetSearchablePDF Input folder.  
+					</p>
+					
+					<br><br>
+					
+					<h1 class="mb-4 text-3xl font-medium text-gray-900 sm:text-lg text-center">I have another scanner</h1>
+					<br>
+					<p class="mb-8 leading-relaxed text-gray-900 text-left">
+						GetSearchablePDF will work with any scanner that can scan directly to Dropbox or OneDrive. 
+					</p>
+					
+					<br><br>
+					
+					<h1 id="drivers" class="mb-4 text-3xl font-medium text-gray-900 sm:text-lg text-center">Raven scanner TWAIN drivers</h1>
+					<br>
+					<p class="mb-8 leading-relaxed text-gray-900 text-left">
+
+					
+						<b>Raven Original Scanner</b> (1st Generation - serial numbers beginning in 553 or 554):<br>
+
+						<a href="https://storage.googleapis.com/raven-185914.appspot.com/Drivers/Raven%20Scanner%20Original%20V6.0.0.1%20Build1000.zip" class="text-blue-600 hover:text-blue-800 underline">Windows</a> | <a href="https://storage.googleapis.com/raven-185914.appspot.com/Drivers/Raven%20ICA%20Scanner_V1.0.0.3.dmg" class="text-blue-600 hover:text-blue-800 underline">Mac</a> 
+
+						<br><br>
+
+						<b>Raven Original Scanner</b> (2nd Generation - serial numbers beginning in B100):<br>
+
+						<a href="https://storage.googleapis.com/desktop.storage.raven.com/Drivers/production/windows/Original2.zip" class="text-blue-600 hover:text-blue-800 underline">Windows</a> | <a href="https://storage.googleapis.com/desktop.storage.raven.com/Drivers/production/mac/Raven-A-Driver-latest.pkg" class="text-blue-600 hover:text-blue-800 underline">Mac</a> 
+
+						<br><br>
+
+						<b>Raven Pro Scanner (or Pro Max)</b>:<br>
+
+						<a href="https://storage.googleapis.com/raven-185914.appspot.com/Drivers/Raven_Scanner_Pro_Windows_Driver_20200408.zip" class="text-blue-600 hover:text-blue-800 underline">Windows</a> | <a href="https://storage.googleapis.com/desktop.storage.raven.com/Drivers/production/mac/Raven-A-Driver-latest.pkg" class="text-blue-600 hover:text-blue-800 underline">Mac</a> 
+
+						<br>
+
+						<a href="https://storage.googleapis.com/raven-185914.appspot.com/Drivers/Raven_Pro_VSL20191121.zip" class="text-blue-600 hover:text-blue-800 underline">Windows Wireless TWAIN link</a> | <a href="https://storage.googleapis.com/desktop.storage.raven.com/Drivers/production/mac/Virtual%20Scanner%20Link.zip" class="text-blue-600 hover:text-blue-800 underline">Mac Wireless TWAIN link</a> 
+
+						<br><br>
+						For Wireless you need to install both the TWAIN driver and Wireless TWAIN link. 
+
+						<br><br>
+
+						<b>Raven Standard Scanner</b><br>
+
+						<a href="https://storage.googleapis.com/desktop.storage.raven.com/Drivers/production/windows/Raven%20Standard.zip" class="text-blue-600 hover:text-blue-800 underline">Windows</a> | <a href="https://storage.googleapis.com/desktop.storage.raven.com/Drivers/production/mac/Raven-A-Driver-latest.pkg" class="text-blue-600 hover:text-blue-800 underline">Mac</a> 
+
+						<br><br>
+
+						<b>Raven Compact Scanner</b><br>
+
+						<a href="https://storage.googleapis.com/desktop.storage.raven.com/Drivers/production/windows/Raven%20Compact.zip" class="text-blue-600 hover:text-blue-800 underline">Windows</a> | <a href="https://storage.googleapis.com/desktop.storage.raven.com/Drivers/production/mac/Raven-A-Driver-latest.pkg" class="text-blue-600 hover:text-blue-800 underline">Mac</a> 
+
+						<br><br>
+
+						<b>Raven Go Scanner</b><br>
+
+						<a href="https://storage.googleapis.com/desktop.storage.raven.com/Drivers/production/windows/Go.zip" class="text-blue-600 hover:text-blue-800 underline">Windows</a> | <a href="https://storage.googleapis.com/desktop.storage.raven.com/Drivers/production/mac/Raven-A-Driver-latest.pkg
+						" class="text-blue-600 hover:text-blue-800 underline">Mac</a>
+					</p>
+			</div>
+		</div>
+    </section>
+        </div>
+
+        <footer class="overflow-hidden shrink-0">
+    <div class="container px-4 py-6 mx-auto">
+        <div class="max-w-6xl mx-auto">
+            <div class="items-center justify-between sm:flex">
+                <div class="flex items-center">
+                </div>
+
+                <div class="items-center mb-6 sm:flex sm:mb-0">
+                    <a class="inline-block mr-6 text-gray-700 sm:mr-12" href="https://getsearchablepdf.com/terms-of-service">Terms &amp; Conditions</a>
+                    <a class="inline-block text-gray-700" href="https://getsearchablepdf.com/privacy-policy">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </body>
+</html>

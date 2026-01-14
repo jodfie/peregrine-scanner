@@ -1,0 +1,14 @@
+[Info] 
+ProgramFolderName=Avision Virtual Scanner 
+ProgramName=Virtual Scanner Link
+Startup=1
+Info_HelpLink=http://www.avision.com 
+Info_URLInfoAbout=http://www.avision.com 
+Info_URLUpdateInfo=http://www.avision.com 
+Info_DisplayVersion=1.0.0.21307
+Info_Publisher=Avision Inc.
+Info_EstimatedSize=60
+Info_Comments=Virtual Scanner Link
+Info_Company=Avision 
+Install_Folder=Avision\Virtual Scanner\ 
+Script_RunStiService=1 

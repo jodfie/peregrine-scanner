@@ -1,0 +1,74 @@
+Raven Download Inventory (generated)
+====================================
+
+Raven Original 1st Gen
+----------------------
+- docs/manuals/original-1st-gen/Raven_Original_1st_Gen_QuickStart_EN.pdf
+- docs/manuals/original-1st-gen/Raven_Original_1st_Gen_User_Manual_122020.pdf
+- downloads/drivers/original-1st-gen/Raven_Original1_Windows_TWAIN.zip
+- downloads/drivers/original-1st-gen/Raven_Original1_Mac_ICA.dmg
+
+Raven Original 2nd Gen
+----------------------
+- docs/manuals/original-2nd-gen/Raven_Original_2nd_Gen_QuickStart_EN.pdf
+- docs/manuals/original-2nd-gen/Raven_Original_2nd_Gen_User_Manual_03142022.pdf
+- downloads/drivers/original-2nd-gen/Original2_Windows_TWAIN.zip
+- downloads/drivers/original-2nd-gen/Raven_A_Driver_Mac_TWAIN.pkg
+
+Raven Pro
+---------
+- docs/manuals/pro/Raven_Pro_User_Manual.pdf
+- docs/manuals/pro/Pro_QuickStart_Guide_v6.pdf
+- docs/manuals/pro/Raven_Scanner_Pro_User_Manual.docx_7.pdf
+- downloads/drivers/pro/Raven_Pro_Windows_TWAIN_20200408.zip
+- downloads/drivers/pro/Raven_Pro_Virtual_Scanner_Link_Windows_20191121.zip
+- downloads/drivers/pro/Raven_Pro_Virtual_Scanner_Link_Mac.zip
+- downloads/drivers/pro/Raven_A_Driver_Mac_TWAIN.pkg
+- downloads/drivers/pro/AN360W_V620_20191106/
+- downloads/drivers/pro/VirtualScannerLink_20211103/
+
+Raven Pro Max
+-------------
+- docs/manuals/pro-max/Raven_Pro_Max_User_Manual_01132023.pdf
+- downloads/drivers/pro-max/Raven_ProMax_Windows_TWAIN_20200408.zip
+- downloads/drivers/pro-max/Raven_A_Driver_Mac_TWAIN.pkg
+
+Raven Standard USB
+------------------
+- docs/manuals/standard-usb/Raven_Standard_USB_User_Manual_02142022.pdf
+- docs/manuals/standard-usb/Raven_Standard_USB_QuickStart_EN.pdf
+- docs/manuals/standard-usb/Raven_Standard_USB_QuickStart_ES.pdf
+- downloads/drivers/standard/Raven_Standard_Windows_TWAIN.zip
+- downloads/drivers/standard/Raven_A_Driver_Mac_TWAIN.pkg
+
+Raven Compact USB
+-----------------
+- docs/manuals/compact-usb/Raven_Compact_USB_User_Manual.pdf
+- downloads/drivers/compact/Raven_Compact_Windows_TWAIN.zip
+- downloads/drivers/compact/Raven_A_Driver_Mac_TWAIN.pkg
+
+Raven Compact WiFi
+------------------
+- (no manuals or drivers downloaded yet)
+
+Raven Go (Simplex & Duplex USB)
+-------------------------------
+- downloads/drivers/go/Raven_Go_Windows_TWAIN.zip
+- downloads/drivers/go/Raven_A_Driver_Mac_TWAIN.pkg
+
+Site & Help Center Snapshots
+----------------------------
+- docs/site/raven-downloads.html
+- docs/site/raven-user-manuals.html
+- docs/site/raven-faq.html
+- docs/site/raven-desktop.html
+- docs/support/support-raven-help-center.html
+- docs/support/360028216192-Raven-Scanner-Return-Policy.html
+- docs/support/360031724051-Scanning-to-Windows-PC-from-Raven-Scanner-Pro.html
+- docs/support/360033057632-Scanning-To-Your-Mac-From-Raven-Scanner-Pro.html
+- docs/support/READ ME FIRST.pdf
+
+Desktop Software & Tools
+------------------------
+- downloads/software/Raven-Desktop-Setup.exe
+- downloads/software/naps2-7.5.1-win.exe
